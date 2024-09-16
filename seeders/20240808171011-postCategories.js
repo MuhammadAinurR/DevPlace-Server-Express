@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 module.exports = {
-  async up(queryInterface) {
-    const data = require('../data/postsCategories.json')
-    await queryInterface.bulkInsert('PostCategories', data);
-  },
+    async up(queryInterface) {
+        const data = require("../data/postsCategories.json");
+        await queryInterface.bulkInsert("PostCategories", data);
+    },
 
-  async down(queryInterface) {
-    await queryInterface.bulkDelete('PostCategories', null, {});
-  }
+    async down(queryInterface) {
+        await queryInterface.bulkDelete("PostCategories", null, {});
+    },
 };
